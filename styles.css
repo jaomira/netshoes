@@ -2,20 +2,27 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-    
+    background-color: white;
     button {
         border: 0;
     }
 }
 
+
+button {
+    cursor: pointer;
+    background-color: rgb(250, 250, 250);
+}
+
 body { 
-    background-color: grey;
+    background-color: rgb(255, 255, 255);
 }
 
 .header-1 {
     background-color: blueviolet;
     height: 10vh;
     max-width: 100%;
+    font-weight: 650;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -36,9 +43,12 @@ body {
         border: 0;
         background-color: white;
         border-radius: 32px;
+        font-size: 1vw;
 
-        font-size: 1.5vw;
+    }
 
+    input::placeholder {
+        text-align: center;
     }
 
     div {
@@ -74,11 +84,20 @@ body {
             background-color: white;
 
             &:hover {
-                background-color: aqua;
+                background-color: rgb(58, 0, 90);
             }
         }
     }
 
+}
+
+.header-1-text {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.heart {
+    cursor: pointer;
 }
 
 .header-2 {
@@ -105,7 +124,6 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-
         text-decoration: none;
         color: gray;
     }
@@ -115,4 +133,43 @@ body {
     img {
         width: 100%;
     }
+}
+
+.links {
+    margin-bottom: 20px;
+    font-size: 12px;
+}
+
+.item-details {
+    margin-top: 20px;
+    margin-left: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+
+}
+
+.ratings {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.details {
+    font-size: 15px;
+    font-weight: 550;
+    ul {
+        list-style: none;
+    }
+}
+
+#share-button {
+    margin-top: 10px;
+}
+
+.item-layer {
+    display: flex;
+    flex-direction: row;
 }
