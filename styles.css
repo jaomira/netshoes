@@ -2,16 +2,12 @@
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
-    background-color: white;
-    button {
-        border: 0;
-    }
 }
 
-
 button {
+    background: transparent;
+    border: 0;
     cursor: pointer;
-    background-color: rgb(250, 250, 250);
 }
 
 body { 
@@ -20,7 +16,7 @@ body {
 
 .header-1 {
     background-color: blueviolet;
-    height: 10vh;
+    height: 5vw;
     max-width: 100%;
     font-weight: 650;
     display: flex;
@@ -49,7 +45,7 @@ body {
     }
 
     input::placeholder {
-        text-align: center;
+        padding-left: 1vw;
     }
 
     div {
@@ -93,7 +89,7 @@ body {
 }
 
 .header-1-text {
-    font-size: 15px;
+    font-size: 1vw;
     font-weight: 600;
 }
 
@@ -103,7 +99,7 @@ body {
 
 .header-2 {
     background-color: ghostwhite;
-    height: 40px;
+    height: 2.8vw;
     max-width: 100%;
     display: flex;
     flex-direction: row;
@@ -112,12 +108,17 @@ body {
     align-items: center;
     font-size: 1vw;
 
+    button {
+        background: transparent;
+    }
+
     a {
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        color: blueviolet
+        color: rgb(161, 147, 175);
+        cursor: pointer;
     }
 
     :first-child {
@@ -126,7 +127,8 @@ body {
         justify-content: center;
         align-items: center;
         text-decoration: none;
-        color: gray;
+        color: blueviolet;
+        cursor: pointer;
     }
 }
 
@@ -150,6 +152,12 @@ body {
     flex-direction: row;
     display: flex;
 
+}
+
+.title-details {
+    span {
+        font-weight: 550;
+    }
 }
 
 .ratings {
@@ -191,16 +199,61 @@ body {
 .details {
     font-size: 15px;
     font-weight: 550;
+
+    span {
+        font-weight: 300;
+    }
+
     ul {
         list-style: none;
     }
 }
 
+.share-item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1vw;
+}
+
 #share-button {
-    margin-top: 10px;
+    width: 2vw;
+    height: 2vw;
+    border-radius: 9999px;
+    background-color: red;
+    border: 2px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vw;
+    margin: 0 20%;
+
+    &:hover {
+        border: black 2px solid;
+    }
 }
 
 .item-layer {
+    margin-top: 3vw;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 0.7vw;
+    .complement {
+        width: 4vw;
+        border-radius: 0.4vw;
+    }
+
+    .item-photos {
+        width: 35vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.7vw;
+    }
+    
+    .sapato {
+        width: 35vw;
+    }
 }
+
