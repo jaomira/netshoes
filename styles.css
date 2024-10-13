@@ -99,29 +99,37 @@ body {
 
 .header-2 {
     background-color: ghostwhite;
-    height: 2.8vw;
+    height: 2.5vw;
     max-width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 2vw;
     align-items: center;
-    font-size: 1vw;
+
 
     button {
         background: transparent;
+    }
+
+    h3 {
+        font-size: 1vw;
+        color: rgb(161, 147, 175);
+        font-weight: 300;
     }
 
     a {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        font-size: 1vw;
         align-items: center;
         color: rgb(161, 147, 175);
         cursor: pointer;
     }
 
     :first-child {
+        font-size : 1vw;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -141,22 +149,41 @@ body {
 .links {
     margin-bottom: 1.3vw;
     font-size: 0.7vw;
+    margin: 2vw;
 }
 
 .item-details {
-    margin-top: 1.3vw;
-    margin-left: 5vw;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-direction: row;
-    display: flex;
+    flex-direction: column;
+
+    .scope {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 3vw;
+
+        .title-container {
+            width: 27%;
+            
+            h1 {
+                font-size: 1.5vw;
+            } 
+        }
+    }
 
 }
 
 .title-details {
+    width: 100%;
+    
+    p {
+        font-size: 1vw;
+    }
+
     span {
         font-weight: 550;
+        font-size: 1vw;
     }
 }
 
@@ -197,7 +224,7 @@ body {
 }
 
 .details {
-    font-size: 15px;
+    font-size: 1vw;
     font-weight: 550;
 
     span {
@@ -214,6 +241,7 @@ body {
     flex-direction: column;
     align-items: start;
     gap: 1vw;
+    font-size: 1.5vw;
 }
 
 #share-button {
@@ -225,8 +253,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1vw;
-    margin: 0 20%;
+    margin-top: 0.5vw;
 
     &:hover {
         border: black 2px solid;
@@ -234,13 +261,26 @@ body {
 }
 
 .item-layer {
-    margin-top: 3vw;
     display: flex;
     flex-direction: column;
     gap: 0.7vw;
+
+    svg {
+        transition: height 0.2s;
+
+        &:hover {
+            height: 3vw;
+        }
+    }
+
     .complement {
         width: 4vw;
         border-radius: 0.4vw;
+        border: 1px solid transparent;
+
+        &:hover {
+            border: 1px solid black;
+        }
     }
 
     .item-photos {
@@ -254,6 +294,73 @@ body {
     
     .sapato {
         width: 35vw;
+    }
+}
+
+.item-price-info {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+
+    .sell-by {
+        p {
+            font-size: 1vw;
+
+            span {
+                font-weight: 700;
+            }
+        }
+    }
+
+    .item-size {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1vw;
+
+        h4 {
+            font-size: 1.2vw;
+        }
+
+        button {
+            width: 2vw;
+            font-size: 1vw;
+            height: 2vw;
+            border-radius: 9999px;
+            border: 1px solid gray;
+
+
+            &:hover {
+                border-color: rgb(73, 0, 128);
+                color: rgb(73, 0, 128);
+            }
+        }
+
+    }
+}
+
+.price-layer {
+    
+    h2 {
+        font-weight: 500;
+        font-size: 1.9vw;
+        
+        span {
+            font-size: 1vw;
+        }
+    }
+
+    h4 {
+        font-size: 1vw;
+        font-weight: 450;
+    }
+
+
+    #old-price {
+        text-decoration: line-through;
+        color: grey;
+        font-size: 0.9vw;
     }
 }
 
