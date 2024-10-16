@@ -22,7 +22,31 @@
   <body>
     <header>
       <section class="header-1">
-        <img src="./img/7ba374555872e98c911690fa95eae162.svg" alt="" />
+        <button class="settings">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="white"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+            height="40px"
+            width="40px"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+        <a href="/">
+          <img
+            class="logo"
+            src="./img/7ba374555872e98c911690fa95eae162.svg"
+            alt=""
+          />
+        </a>
         <form>
           <div class="search-box">
             <div class="search">
@@ -31,12 +55,13 @@
                 type="search"
                 placeholder="O que você está procurando?"
               />
-              <button>
+              <button class="search-icon">
                 <svg
+                  class="search-icon"
                   xmlns="http://www.w3.org/2000/svg"
-                  height="2.5vw"
+                  height="25px"
                   viewBox="0 -960 960 960"
-                  width="2.5vw"
+                  width="25px"
                   fill="blueviolet"
                 >
                   <path
@@ -44,6 +69,18 @@
                   />
                 </svg>
               </button>
+              <svg
+                class="mobile-search-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                height="25px"
+                viewBox="0 -960 960 960"
+                width="25px"
+                fill="white"
+              >
+                <path
+                  d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"
+                />
+              </svg>
             </div>
           </div>
         </form>
@@ -55,7 +92,8 @@
             stroke-width="1.5"
             stroke="currentColor"
             class="size-6"
-            height="2.4vw"
+            height="30px"
+            width="30px"
           >
             <path
               stroke-linecap="round"
@@ -70,26 +108,27 @@
             <svg
               class="login-icon"
               xmlns="http://www.w3.org/2000/svg"
-              height="2.5vw"
+              height="30px"
               viewBox="0 -960 960 960"
-              width="2.5vw"
-              fill="#e8eaed"
+              width="30px"
+              fill="white"
             >
               <path
                 d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"
               />
             </svg>
           </button>
-          <h3 class="header-1-text">Entrar</h3>
+          <button class="header-1-text">Entrar</button>
         </div>
         <div class="">
           <button>
             <svg
+              class="shopping-cart"
               xmlns="http://www.w3.org/2000/svg"
-              height="2.0vw"
+              height="30px"
               viewBox="0 -960 960 960"
               width="auto"
-              fill="#e8eaed"
+              fill="white"
             >
               <path
                 d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"
@@ -99,45 +138,48 @@
         </div>
       </section>
       <section class="header-2">
-        <a href="/">
+        <button class="location">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            height="1.5vw"
+            height="25px"
             viewBox="0 -960 960 960"
-            width="1.5vw"
+            width="25px"
             fill="blueviolet"
           >
             <path
               d="M480-480q33 0 56.5-23.5T560-560q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560q0 33 23.5 56.5T480-480Zm0 294q122-112 181-203.5T720-552q0-109-69.5-178.5T480-800q-101 0-170.5 69.5T240-552q0 71 59 162.5T480-186Zm0 106Q319-217 239.5-334.5T160-552q0-150 96.5-239T480-880q127 0 223.5 89T800-552q0 100-79.5 217.5T480-80Zm0-480Z"
             />
           </svg>
-          <h3>Enviar para: 44073-100</h3>
-        </a>
-        <a>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="1.5vw"
-            viewBox="0 -960 960 960"
-            width="1.5vw"
-            fill="blueviolet"
-          >
-            <path
-              d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z"
-            />
-          </svg>
-          <button>
-            <h4>Todas as categorias</h4>
-          </button>
-        </a>
-        <a>SPORTSTYLE</a>
-        <a>CORRIDA</a>
-        <a>FUTEBOL</a>
-        <a>LOJAS PARCEIRAS</a>
-        <a>CUPONS</a>
-        <a>PARCEIROS NETSHOES</a>
+          <h3 class="send-to">Enviar para: 44073-100</h3>
+        </button>
+        <div class="categories">
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="1.5vw"
+              viewBox="0 -960 960 960"
+              width="1.5vw"
+              fill="blueviolet"
+            >
+              <path
+                d="M280-600v-80h560v80H280Zm0 160v-80h560v80H280Zm0 160v-80h560v80H280ZM160-600q-17 0-28.5-11.5T120-640q0-17 11.5-28.5T160-680q17 0 28.5 11.5T200-640q0 17-11.5 28.5T160-600Zm0 160q-17 0-28.5-11.5T120-480q0-17 11.5-28.5T160-520q17 0 28.5 11.5T200-480q0 17-11.5 28.5T160-440Zm0 160q-17 0-28.5-11.5T120-320q0-17 11.5-28.5T160-360q17 0 28.5 11.5T200-320q0 17-11.5 28.5T160-280Z"
+              />
+            </svg>
+            <button class="all-categories">
+              <h4>Todas as categorias</h4>
+            </button>
+          </a>
+          <a>SPORTSTYLE</a>
+          <a>CORRIDA</a>
+          <a>FUTEBOL</a>
+          <a>LOJAS PARCEIRAS</a>
+          <a>CUPONS</a>
+          <a>PARCEIROS NETSHOES</a>
+        </div>
       </section>
       <section class="header-3">
         <img
+          class="free-shipping-image"
           src="./img/8004_1920x50.webp"
           alt="FRETE GRÁTIS em MILHARES de produtos"
         />
@@ -156,7 +198,7 @@
             <h1>Tênis Adidas Courtblock Masculino - Branco</h1>
             <p><span>Ref.:</span>FB9-3749-158-37</p>
             <button class="ratings">
-              <h1>4.72</h1>
+              <h1 id="item-rate">4.72</h1>
               <div class="rating-container">
                 <div class="stars">
                   <svg
@@ -164,7 +206,7 @@
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     class="size-6"
-                    height="1.7vw"
+                    height="20px"
                   >
                     <path
                       fill-rule="evenodd"
@@ -177,7 +219,7 @@
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     class="size-6"
-                    height="1.7vw"
+                    height="20px"
                   >
                     <path
                       fill-rule="evenodd"
@@ -190,7 +232,7 @@
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     class="size-6"
-                    height="1.7vw"
+                    height="20px"
                   >
                     <path
                       fill-rule="evenodd"
@@ -203,7 +245,7 @@
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     class="size-6"
-                    height="1.7vw"
+                    height="20px"
                   >
                     <path
                       fill-rule="evenodd"
@@ -216,7 +258,7 @@
                     viewBox="0 0 24 24"
                     fill="currentColor"
                     class="size-6"
-                    height="1.7vw"
+                    height="20px"
                   >
                     <path
                       fill-rule="evenodd"
@@ -330,10 +372,10 @@
         <div class="item-price-info">
           <div class="price-layer">
             <p id="old-price">R$ 349,90</p>
-            <h2>R$ 245,24 <span>no pix</span></h2>
+            <h2 class="current-price">R$ 245,24 <span>no Pix</span></h2>
             <h4>ou R$ 258,15 em até 5x sem juros</h4>
           </div>
-          <div class="sell-by">
+          <div class="sold-by">
             <p>Vendido por <span>Netshoes</span></p>
             <p>Cor: Branco</p>
           </div>
